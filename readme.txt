@@ -1,44 +1,28 @@
-This is my fixed for DPLM-56666666666dsadsd
-For any questions - Please email me at DevOps@RajeshKumar.xyz
+This is my fixed for DPLM-
+For any questions - Please email me at DevOps@Bibhutibhusan.xyz
 # ========================NEXUS==============================
 
 <distributionManagement>
 	<repository>
-		<id>tata</id>
+		<id>deploymentrepo</id>
 		<name>Internal Releases</name>
-		<url>http://13.127.163.182:8081/repository/scmgalaxy/</url>
+		<url>http://192.168.0.50:8081/nexus/content/repositories/MPH/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>tata</id>
+		<id>deploymentrepo</id>
 		<name>Internal Releases</name>
-		<url>http://52.66.106.91:8081/nexus/content/repositories/snapshot/</url>
+		<url>http://192.168.0.50:8081/nexus/content/repositories/MPH-SNAP/</url>
 	</snapshotRepository>
 
 </distributionManagement>
 
-
-===============ARTIFACTORY=================
-<distributionManagement>
-	<repository>
-		<id>rajesh</id>
-		<name>Internal Releases</name>
-		<url>http://13.127.94.210:8081/artifactory/list/rajesh-release/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>rajesh</id>
-		<name>Internal Releases</name>
-		<url>http://13.127.94.210:8081/artifactory/list/rajesh-snapshot/</url>
-	</snapshotRepository>
-
-</distributionManagement>
 
 =====================SETTING.XML=================================
    <server>
-		<id>rajesh</id>
-		<username>rajesh-user</username>
-		<password>rajesh-user123</password>
+		<id>deploymentrepo</id>
+		<username>deployment</username>
+		<password>deployment123</password>
 </server>
 
 =======================Setting.xml with Artifactory Setup======================
@@ -48,6 +32,3 @@ For any questions - Please email me at DevOps@RajeshKumar.xyz
       <url>http://13.127.94.210:8081/artifactory/list/group/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
-    
-    
-
